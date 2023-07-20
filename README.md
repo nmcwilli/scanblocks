@@ -14,3 +14,21 @@ The app was built by Neil McWilliam and is now open-source so that others can ho
 * [Apache][2] Web Server with [mod_rewrite][3] enabled or [Nginx][4] Web Server
 * Latest stable [Phalcon Framework release][5] extension enabled
 * [MySQL][6] >= 5.5
+* Phalcon Framework >= 4.0 
+
+### Installation Instructions
+
+Setup a Phalcon server following these instructions: (Use the invo project as starting point)
+https://docs.phalcon.io/5.0/en/tutorial-invo
+
+Setup a back-end relational database - For this project we recommend MySQL.
+
+Once your new DB server is running and DB has been created with credentials, create a .env file in project root to store your DB_ADAPTER, DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DBNAME, and DB_CHARSET
+
+Run the migrations scripts under db/migrations to create the appropriate DB tables. 
+
+Copy the source files to your phalcon directory being serviced. 
+
+Recommend to create a load balancer w/ SSL certificate to serve up the traffic.  
+
+Now you should be up and running. 
